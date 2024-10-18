@@ -1,3 +1,2 @@
-# ash
-
-Source of a personal website of mine.
+# ASH (Adrian Victor & Sílvia Holz)
+This is a website for me and my girlfriend that I maintain in my free time. It may be pretty barebones as I'm implementing stuff as I evolve in my webdesign classes.
