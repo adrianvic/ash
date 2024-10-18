@@ -1,0 +1,184 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lightMode {
+    background-color: rgb(255, 220, 220);
+    color: black;
+}
+
+
+header {
+	border-bottom: 20px groove darkred;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1vw;
+}
+
+#titleContainer {
+	flex-grow: 1;
+}
+
+#indexASCII {
+	text-align: center;
+	font-size:x-large;
+	color: rgb(253, 50, 50);
+    max-width: 100%;
+    font-size: 1vw; 
+    line-height: 1.5;  
+}
+
+#title {
+	transition: opacity 0.25s ease;
+	opacity: 1;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+#quoteMan {
+	text-align: right;
+	flex-grow: 1;
+	color: rgb(253, 50, 50);
+}
+
+.lightMode #titleLinks:hover a {
+	color: black;
+}
+
+#titleLinks:hover a {
+	color: white;
+}
+
+header ul {
+	padding-left: 0.2vh;
+	padding-right: 0.2vh;
+}
+
+
+a {
+	transition: .2s;
+	color: rgb(170, 170, 170);
+	text-decoration: none;
+	padding-right: 1vh;
+}
+
+a:hover {
+	color: rgb(253, 50, 50) !important;
+}
+
+
+.lightMode a {
+	color: rgb(70, 70, 70);
+}
+
+main {
+	padding: 2vh;
+}
+
+footer {
+	border-top: 10px solid darkred;
+	padding: 2vh;
+}
+
+.igiHelper {
+	transition: 250ms;
+}
+
+.igiHelper:hover {
+	transition: 250ms;
+}
+
+.imageGalleryImage {
+	border: 2px solid darkred;
+	max-height: 25vh;
+	perspective: 600px;
+	transition: all 250ms ease-out;
+}
+
+.imageGalleryImage:hover {
+	z-index: 10;
+	border: 2px solid white;
+}
+
+.recTitle {
+	margin-bottom: 0;
+}
+
+.rec:first-child {
+	border: none;
+}
+
+.rec {
+	margin-bottom: 0;
+}
+
+.recImage {
+	max-height: 25vh;
+	float: left;
+	max-width: 15vw;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	border: 2px solid darkred;
+}
+
+.bpContainerHelper {
+	display: flex;
+	flex-direction: row;
+	margin-top: 0;
+}
+
+.bpContainer1, .bpContainer2 {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.bpContainer1, .bpContainer2 a {
+	margin: 0;
+}
+
+.bpContainer2 {
+	margin-left: 10vh;
+}
+
+.bpTitle {
+	margin-bottom: 0;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+	header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
+	#quoteMan {
+		text-align: center;
+		border-top: 20px groove darkred;
+		/* border-bottom: 20px groove darkred; */
+		width: 100%;
+	}
+	#titleContainer {
+		text-align: center;
+	}
+
+	#indexASCII {
+		font-size: 2vw;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.bpContainerHelper {
+		flex-direction: column;
+	}
+
+	.bpContainer2 {
+		margin: 0;
+	}
+}

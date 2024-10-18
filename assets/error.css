@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+#errorTitle {
+    color: darkred;
+    font-size: 20vh;
+    margin: 0;
+    margin-right: 2vw;
+}
+
+#errorText {
+    font-size: x-large;
+}
+
+#everythingHelper {
+    display: flex;
+    flex-wrap: wrap;
+}
